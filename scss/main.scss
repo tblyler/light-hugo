@@ -40,8 +40,9 @@ a:hover {
 
 	// these images are always SVG
 	img {
-		height: 64px;
-		width: 64px;
+		// this is now set in the img property itself
+		//height: 64px;
+		//width: 64px;
 	}
 }
 
