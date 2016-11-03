@@ -36,21 +36,27 @@ a:hover {
 }
 
 #social {
+	padding-bottom: 1%;
+
 	// these images are always SVG
 	img {
-		height: 3%;
-		width: 3%;
+		height: 64px;
+		width: 64px;
 	}
 }
 
 .links {
+	font-size: 15pt;
 	word-spacing: 1em;
-	padding-bottom: 1%;
 
 	a {
 		color: black;
 		text-decoration: none;
 		font-weight: bold;
+	}
+
+	&:last-of-type {
+		padding-bottom: 1%;
 	}
 }
 
