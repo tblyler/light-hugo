@@ -1,0 +1,12 @@
+{{ partial "header.html" . }}
+	<div class="postBody">
+		<div class="post">
+			<h1>{{ .Title }}</h1>
+			<span class="post-meta">{{ .Date.Format "Mon, Jan 2, 2006" }} - Read in {{ .ReadingTime }} Min</span>
+			<div class="content">
+			{{ .TableOfContents }}
+			{{ .Content }}
+			</div>
+		</div>
+	</div>
+{{ partial "footer.html" . }}

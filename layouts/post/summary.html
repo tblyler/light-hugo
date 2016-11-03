@@ -1,0 +1,16 @@
+<div class="postBody">
+	<article class="post">
+		<header>
+			<h1>
+				<a href="{{ .Permalink }}">{{ .Title }} {{ if .Draft }}:: DRAFT{{end}}</a>
+			</h1>
+			<span class="post-meta">
+				{{ .Date.Format "Mon, Jan 2, 2006" }} - Read in {{ .ReadingTime }} Min
+			</span>
+		</header>
+		<div class="summary">
+			{{ .Summary }}
+			<a href="{{ .Permalink }}">Read more...</a>
+		</div>
+	</article>
+</div>

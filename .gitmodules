@@ -1,0 +1,6 @@
+[submodule "modules/evil-icons"]
+	path = modules/evil-icons
+	url = https://github.com/outpunk/evil-icons.git
+[submodule "modules/normalize-scss"]
+	path = modules/normalize-scss
+	url = https://github.com/JohnAlbin/normalize-scss.git
