@@ -1,4 +1,11 @@
 #!/bin/bash
+
+if [ "${1}" = "clean" ]; then
+	echo 'Pruning static/css'
+	rm -R ./static/css/*
+	exit $?
+fi
+
 if ! which sass &> /dev/null; then
 	echo 'sass is missing from PATH' 1>&2
 	exit 1
