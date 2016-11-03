@@ -6,6 +6,7 @@
 		<title>{{ .Title }} &middot; {{ .Site.Title }}</title>
 		<base href="{{ .Permalink }}">
 		<link rel="canonical" href="{{ .Permalink }}">
+		<link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}/css/main.css" />
 		{{ if .RSSlink }}
 			<link href="{{ .RSSlink }}" rel="alternative" type="application/rss+xml" title="{{ .Title }}" />
 		{{ end }}
