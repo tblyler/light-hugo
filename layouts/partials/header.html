@@ -53,7 +53,7 @@
 		<div class="links">
 			<a href="{{ .Site.BaseURL }}">Home</a>
 			{{ range first 1 (where .Site.Pages "Type" "post") }}
-				<a href="{{ .Site.BaseURL }}post/">Archive</a>
+				<a href="{{ .Site.BaseURL }}/post/">Archive</a>
 			{{ end }}
 			{{ range where .Site.Pages "Type" "!=" "post" }}
 				<a href="{{ .Permalink }}">{{ .Title }}</a>
