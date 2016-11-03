@@ -9,7 +9,7 @@
 		{{ if .RSSlink }}
 			<link href="{{ .RSSlink }}" rel="alternative" type="application/rss+xml" title="{{ .Title }}" />
 		{{ end }}
-		<link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}css/main.css" />
+		<link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}/css/main.css" />
 	</head>
 	<body>
 		<a id="title" href="{{ .Site.BaseURL }}" title="{{ .Site.Title }}">
@@ -23,27 +23,27 @@
 		<div id="social">
 			{{ if .Site.Params.email }}
 			<a href="mailto:{{ .Site.Params.email }}" title="Email {{ .Site.Params.email }}">
-				<img alt="Email" src="{{ .Site.BaseURL }}images/email.svg" />
+				<img alt="Email" src="{{ .Site.BaseURL }}/images/email.svg" />
 			</a>
 			{{ end }}
 			{{ if .Site.Params.github }}
 			<a href="https://github.com/{{ .Site.Params.github }}" title="Github">
-				<img alt="GitHub" src="{{ .Site.BaseURL }}images/github.svg" />
+				<img alt="GitHub" src="{{ .Site.BaseURL }}/images/github.svg" />
 			</a>
 			{{ end }}
 			{{ if .Site.Params.facebook }}
 			<a href="https://facebook.com/{{ .Site.Params.facebook }}" title="Facebook">
-				<img alt="Facebook" src="{{ .Site.BaseURL }}images/facebook.svg" />
+				<img alt="Facebook" src="{{ .Site.BaseURL }}/images/facebook.svg" />
 			</a>
 			{{ end }}
 			{{ if .Site.Params.twitter }}
 			<a href="https://twitter.com/{{ .Site.Params.twitter }}" title="Twitter">
-				<img alt="Twitter" src="{{ .Site.BaseURL }}images/twitter.svg" />
+				<img alt="Twitter" src="{{ .Site.BaseURL }}/images/twitter.svg" />
 			</a>
 			{{ end }}
 			{{ if .Site.Params.linkedin }}
 			<a href="https://linkedin.com/in/{{ .Site.Params.linkedin }}" title="LinkedIn">
-				<img alt="LinkedIn" src="{{ .Site.BaseURL }}images/linkedin.svg" />
+				<img alt="LinkedIn" src="{{ .Site.BaseURL }}/images/linkedin.svg" />
 			</a>
 			{{ end }}
 		</div>
