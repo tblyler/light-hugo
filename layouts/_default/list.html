@@ -5,7 +5,7 @@
 				<h2>{{ .Key }}</h2>
 				{{ range .Pages }}
 					<h3>
-						<a href="{{ .Permalink }}">
+						<a href="{{ .RelPermalink }}">
 							{{ .Title }} {{ if .GetParam "draft" }}DRAFT{{ end }}
 						</a>
 					</h3>

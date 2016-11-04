@@ -4,15 +4,14 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 		<title>{{ .Title }} &middot; {{ .Site.Title }}</title>
-		<base href="{{ .Permalink }}">
 		<link rel="canonical" href="{{ .Permalink }}">
-		<link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}/css/main.css" />
+		<link rel="stylesheet" type="text/css" href="/css/main.css" />
 		{{ if .RSSlink }}
 			<link href="{{ .RSSlink }}" rel="alternative" type="application/rss+xml" title="{{ .Title }}" />
 		{{ end }}
 	</head>
 	<body>
-		<a id="title" href="{{ .Site.BaseURL }}" title="{{ .Site.Title }}">
+		<a id="title" href="/" title="{{ .Site.Title }}">
 			{{ if .Site.Params.logo }}
 				<img id="logo" alt="Logo" src="{{ .Site.Params.logo }}" />
 			{{ end }}
@@ -24,27 +23,27 @@
 			{{ $icon_size := "64px" }}
 			{{ if .Site.Params.email }}
 			<a href="mailto:{{ .Site.Params.email }}" title="Email">
-				<img alt="Email" height="{{ $icon_size }}" width="{{ $icon_size }}" src="{{ .Site.BaseURL }}/images/email.svg" />
+				<img alt="Email" height="{{ $icon_size }}" width="{{ $icon_size }}" src="/images/email.svg" />
 			</a>
 			{{ end }}
 			{{ if .Site.Params.github }}
 			<a href="https://github.com/{{ .Site.Params.github }}" title="Github">
-				<img alt="GitHub" height="{{ $icon_size }}" width="{{ $icon_size }}" src="{{ .Site.BaseURL }}/images/github.svg" />
+				<img alt="GitHub" height="{{ $icon_size }}" width="{{ $icon_size }}" src="/images/github.svg" />
 			</a>
 			{{ end }}
 			{{ if .Site.Params.facebook }}
 			<a href="https://facebook.com/{{ .Site.Params.facebook }}" title="Facebook">
-				<img alt="Facebook" height="{{ $icon_size }}" width="{{ $icon_size }}" src="{{ .Site.BaseURL }}/images/facebook.svg" />
+				<img alt="Facebook" height="{{ $icon_size }}" width="{{ $icon_size }}" src="/images/facebook.svg" />
 			</a>
 			{{ end }}
 			{{ if .Site.Params.twitter }}
 			<a href="https://twitter.com/{{ .Site.Params.twitter }}" title="Twitter">
-				<img alt="Twitter" height="{{ $icon_size }}" width="{{ $icon_size }}" src="{{ .Site.BaseURL }}/images/twitter.svg" />
+				<img alt="Twitter" height="{{ $icon_size }}" width="{{ $icon_size }}" src="/images/twitter.svg" />
 			</a>
 			{{ end }}
 			{{ if .Site.Params.linkedin }}
 			<a href="https://linkedin.com/in/{{ .Site.Params.linkedin }}" title="LinkedIn">
-				<img alt="LinkedIn" height="{{ $icon_size }}" width="{{ $icon_size }}" src="{{ .Site.BaseURL }}/images/linkedin.svg" />
+				<img alt="LinkedIn" height="{{ $icon_size }}" width="{{ $icon_size }}" src="/images/linkedin.svg" />
 			</a>
 			{{ end }}
 		</div>
@@ -52,11 +51,11 @@
 			<p>{{ .Site.Params.description }}</p>
 		{{ end }}
 		<div class="links">
-			<a href="{{ .Site.BaseURL }}">Home</a>
+			<a href="/">Home</a>
 			{{ range first 1 (where .Site.Pages "Type" "post") }}
-				<a href="{{ .Site.BaseURL }}/post/">Archive</a>
+				<a href="/post/">Archive</a>
 			{{ end }}
 			{{ range where .Site.Pages "Type" "!=" "post" }}
-				<a href="{{ .Permalink }}">{{ .Title }}</a>
+				<a href="{{ .RelPermalink }}">{{ .Title }}</a>
 			{{ end }}
 		</div>

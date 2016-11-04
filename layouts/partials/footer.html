@@ -1,10 +1,10 @@
 		<div class="links">
-			<a href="{{ .Site.BaseURL }}">Home</a>
+			<a href="/">Home</a>
 			{{ range first 1 (where .Site.Pages "Type" "post") }}
-				<a href="{{ .Site.BaseURL }}/post/">Archive</a>
+				<a href="/post/">Archive</a>
 			{{ end }}
 			{{ range where .Site.Pages "Type" "!=" "post" }}
-				<a href="{{ .Permalink }}">{{ .Title }}</a>
+				<a href="{{ .RelPermalink }}">{{ .Title }}</a>
 			{{ end }}
 			<a href="#top">Top</a>
 		</div>
