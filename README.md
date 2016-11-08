@@ -27,3 +27,6 @@ facebook = "example"
 twitter = "tonyblyler"
 linkedin = "tblyler"
 ```
+
+You can also append your own `<head>` and footer elements (just before the `</body>`).
+Do so by creating `layouts/partials/foot.html` and `layouts/partials/head.html` files in your hugo directory before compilation.
