@@ -20,6 +20,9 @@
 				<h1>{{ .Site.Title }}</h1>
 			{{ end }}
 		</a>
+		{{ if .Site.Params.description }}
+			<h4>{{ .Site.Params.description }}</h4>
+		{{ end }}
 		<div id="social">
 			{{ $icon_size := "64px" }}
 			{{ if .Site.Params.email }}
@@ -48,9 +51,6 @@
 			</a>
 			{{ end }}
 		</div>
-		{{ if .Site.Params.description }}
-			<p>{{ .Site.Params.description }}</p>
-		{{ end }}
 		<div class="links">
 			<a href="/">Home</a>
 			{{ range first 1 (where .Site.Pages "Type" "post") }}
