@@ -9,5 +9,10 @@
 			<a href="#top">Top</a>
 		</div>
 		{{ partial "foot.html" . }}
+		{{ if .Site.Copyright }}
+		<p id="copyright">
+			{{ .Site.Copyright }}
+		</p>
+		{{ end }}
 	</body>
 </html>

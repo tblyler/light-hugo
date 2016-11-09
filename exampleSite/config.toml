@@ -6,6 +6,7 @@ theme = "light-hugo"
 
 title = "Light Hugo"
 author = "John Doe"
+copyright = "© Copyright 2016 John Doe"
 
 [Params]
   description = "Describe your website"
