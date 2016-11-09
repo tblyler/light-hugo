@@ -16,16 +16,22 @@ The posts will be treated as blogs and pages will be treated with a similar fash
 The following config options are available for displaying custom content...
 
 ```toml
-title = "Tony Blyler"
+baseurl = "https://example.org/"
+languageCode = "en-us"
+theme = "light-hugo"
+
+title = "Light Hugo"
+author = "John Doe"
+copyright = "© Copyright 2016 John Doe"
 
 [Params]
-description = "Programmer, deal with it"
-logo = "/images/logo.png"
-email = "tblyler@example.com"
-github = "tblyler"
-facebook = "example"
-twitter = "tonyblyler"
-linkedin = "tblyler"
+  description = "Describe your website"
+  email = "john@example.org"
+  github = "tblyler"
+  twitter = "tonyblyler"
+  linkedin = "johndoe"
+  facebook = "johndoe"
+  logo = "/images/logo.png"
 ```
 
 You can also append your own `<head>` and footer elements (just before the `</body>`).
