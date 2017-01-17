@@ -56,7 +56,7 @@
 			{{ range first 1 (where .Site.Pages "Type" "post") }}
 				<a href="/post/">Archive</a>
 			{{ end }}
-			{{ range where .Site.Pages "Type" "!=" "post" }}
+			{{ range (where .Site.Pages "Section" "pages") }}
 				<a href="{{ .RelPermalink }}">{{ .Title }}</a>
 			{{ end }}
 		</div>
