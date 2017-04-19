@@ -57,6 +57,8 @@
 				<a href="/post/">Archive</a>
 			{{ end }}
 			{{ range (where .Site.Pages "Section" "pages") }}
-				<a href="{{ .RelPermalink }}">{{ .Title }}</a>
+				{{ if .IsPage }}
+					<a href="{{ .RelPermalink }}">{{ .Title }}</a>
+				{{ end }}
 			{{ end }}
 		</div>
