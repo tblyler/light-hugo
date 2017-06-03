@@ -50,6 +50,12 @@
 				<img alt="LinkedIn" height="{{ $icon_size }}" width="{{ $icon_size }}" src="/images/linkedin.svg" />
 			</a>
 			{{ end }}
+                        {{ if .Site.Params.youtube }}
+                        <a href="https://youtube.com/user/{{ .Site.Params.youtube }}" title="Youtube">
+                                <img alt="Youtube" height="{{ $icon_size }}" width="{{ $icon_size }}" src="/images/youtube.svg" />
+                        </a>
+                        {{ end }}
+
 		</div>
 		<div class="links">
 			<a href="/">Home</a>
