@@ -31,6 +31,7 @@ copyright = "© Copyright 2016 John Doe"
   twitter = "tonyblyler"
   linkedin = "johndoe"
   facebook = "johndoe"
+  youtube = "johndoe"
   logo = "/images/logo.png"
 ```
 
