@@ -6,7 +6,7 @@
 				{{ range .Pages }}
 					<h3>
 						<a href="{{ .RelPermalink }}">
-							{{ .Title }} {{ if .GetParam "draft" }}DRAFT{{ end }}
+							{{ .Title }} {{ if .Param "draft" }}DRAFT{{ end }}
 						</a>
 					</h3>
 					<div class="post-meta">

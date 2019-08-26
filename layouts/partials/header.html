@@ -6,9 +6,9 @@
 		<title>{{ .Title }} &middot; {{ .Site.Title }}</title>
 		<link rel="canonical" href="{{ .Permalink }}">
 		<link rel="stylesheet" type="text/css" href="/css/main.css" />
-		{{ if .RSSLink }}
-			<link href="{{ .RSSLink }}" rel="alternative" type="application/rss+xml" title="{{ .Title }}" />
-		{{ end }}
+		{{ range .AlternativeOutputFormats -}}
+		    {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+		{{ end -}}
 		{{ partial "head.html" . }}
 	</head>
 	<body>
