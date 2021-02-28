@@ -27,32 +27,32 @@
 			{{ $icon_size := "64px" }}
 			{{ if .Site.Params.email }}
 			<a href="mailto:{{ .Site.Params.email }}" title="Email">
-				<img alt="Email" height="{{ $icon_size }}" width="{{ $icon_size }}" src="{{ "/images/email.svg" | relURL}}" />
+				<img alt="Email" height="{{ $icon_size }}" width="{{ $icon_size }}" src="{{ "/images/icons/email.svg" | relURL}}" />
 			</a>
 			{{ end }}
 			{{ if .Site.Params.github }}
 			<a href="https://github.com/{{ .Site.Params.github }}" title="Github">
-				<img alt="GitHub" height="{{ $icon_size }}" width="{{ $icon_size }}" src="{{ "/images/github.svg" | relURL}}" />
+				<img alt="GitHub" height="{{ $icon_size }}" width="{{ $icon_size }}" src="{{ "/images/icons/github.svg" | relURL}}" />
 			</a>
 			{{ end }}
 			{{ if .Site.Params.facebook }}
 			<a href="https://facebook.com/{{ .Site.Params.facebook }}" title="Facebook">
-				<img alt="Facebook" height="{{ $icon_size }}" width="{{ $icon_size }}" src="{{"/images/facebook.svg" | relURL}}" />
+				<img alt="Facebook" height="{{ $icon_size }}" width="{{ $icon_size }}" src="{{"/images/icons/facebook.svg" | relURL}}" />
 			</a>
 			{{ end }}
 			{{ if .Site.Params.twitter }}
 			<a href="https://twitter.com/{{ .Site.Params.twitter }}" title="Twitter">
-				<img alt="Twitter" height="{{ $icon_size }}" width="{{ $icon_size }}" src="{{"/images/twitter.svg" | relURL}}" />
+				<img alt="Twitter" height="{{ $icon_size }}" width="{{ $icon_size }}" src="{{"/images/icons/twitter.svg" | relURL}}" />
 			</a>
 			{{ end }}
 			{{ if .Site.Params.linkedin }}
 			<a href="https://linkedin.com/in/{{ .Site.Params.linkedin }}" title="LinkedIn">
-				<img alt="LinkedIn" height="{{ $icon_size }}" width="{{ $icon_size }}" src="{{"/images/linkedin.svg" | relURL}}" />
+				<img alt="LinkedIn" height="{{ $icon_size }}" width="{{ $icon_size }}" src="{{"/images/icons/linkedin.svg" | relURL}}" />
 			</a>
 			{{ end }}
                         {{ if .Site.Params.youtube }}
                         <a href="https://youtube.com/user/{{ .Site.Params.youtube }}" title="Youtube">
-                                <img alt="Youtube" height="{{ $icon_size }}" width="{{ $icon_size }}" src="{{"/images/youtube.svg" | relURL}}" />
+                                <img alt="Youtube" height="{{ $icon_size }}" width="{{ $icon_size }}" src="{{"/images/icons/youtube.svg" | relURL}}" />
                         </a>
                         {{ end }}
 		</div>
